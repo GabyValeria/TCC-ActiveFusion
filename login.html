@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ActiveFusion</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <link rel="icon" href="logos/2.png" type="image/png">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Login</h1>
+        <form action="login.php" method="POST" id="loginForm">
+            <input type="text" name="username_or_email" placeholder="E-mail ou Usuário" required>
+            <div class="password-container">
+                <input type="password" id="login-password" name="password" placeholder="Senha" required>
+                <button type="button" class="toggle-password" onclick="togglePassword('login-password', this)">
+                    <i class="ri-eye-close-line"></i>
+                </button>
+            </div>
+            <button class="nav__btn" type="submit">
+                <span class="text">Entrar</span>
+            </button>
+        </form>
+        <p>Esqueceu sua senha? <a href="forgot_password.html">Clique aqui</a></p>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

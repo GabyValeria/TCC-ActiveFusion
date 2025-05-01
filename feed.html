@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed | ActiveFusion</title>
+  <link rel="icon" href="logos/2.png" type="image/png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
+
+    :root {
+      --primary-color:  #ffffff;
+      --primary-color-light: #ff9999;
+      --primary-color-extra-light: #ffcc99;
+      --secondary-color: #330099;
+      --secondary-color-dark: #3c03ad;
+      --secondary-color-extra-dark: #000000;
+      --text-light: #1b1b1b;
+      --white: #ffffff;
+      --max-width: 1200px;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: var(--text-light);
+    }
+
+    header {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Menu de navegação */
+    nav {
+      background-color: var(--secondary-color-dark);
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-size: 16px;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--primary-color-light);
+      color: var(--secondary-color);
+    }
+
+    .feed {
+      margin-top: 20px;
+    }
+
+    .post {
+      background-color: var(--primary-color);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .post-header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 3px solid var(--secondary-color);
+    }
+
+    .post-header h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .post-header p {
+      font-size: 14px;
+      color: var(--secondary-color);
+    }
+
+    .post-content {
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .post-actions {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: var(--secondary-color);
+    }
+
+    .post-actions a {
+      text-decoration: none;
+      color: var(--secondary-color);
+      font-weight: 500;
+    }
+
+    .post-actions a:hover {
+      color: var(--secondary-color-dark);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Feed | ActiveFusion</h1>
+      <nav>
+        <ul>
+          <li><a href="perfil.html">Perfil</a></li>
+          <li><a href="#configuracoes">Configurações</a></li>
+          <li><a href="#sair">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container feed">
+    <!-- Post 1 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="avatares/1.png" alt="Foto de perfil de Bruna Silva">
+        <div>
+          <h3>Bruna Silva</h3>
+          <p>@brunasilva - 2 horas atrás</p>
+        </div>
+      </div>
+      <div class="post-content">
+        <p>Acabei de terminar um treino incrível! Me senti super energizada. 💪 Estou cada vez mais motivada! #fitness #treinoincrivel #progresso</p>
+      </div>
+      <div class="post-actions">
+        <a href="#">Curtir</a>
+        <a href="#">Comentar</a>
+        <a href="#">Compartilhar</a>
+      </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="avatares/2.png" alt="Foto de perfil de João Souza">
+        <div>
+          <h3>João Souza</h3>
+          <p>@joaosouza - 4 horas atrás</p>
+        </div>
+      </div>
+      <div class="post-content">
+        <p>Hoje fiz meu recorde de levantamento de peso! Estou muito feliz com meu progresso. #levantamentodepeso #força #fitnessmotivation</p>
+      </div>
+      <div class="post-actions">
+        <a href="#">Curtir</a>
+        <a href="#">Comentar</a>
+        <a href="#">Compartilhar</a>
+      </div>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="avatares/3.png" alt="Foto de perfil de Lucas Silva">
+        <div>
+          <h3>Lucas Silva</h3>
+          <p>@lucassilva - 6 horas atrás</p>
+        </div>
+      </div>
+      <div class="post-content">
+        <p>Desafio de 30 dias concluído! Agora é hora de me preparar para o próximo. Vamos com tudo! #desafios #30dias #foco</p>
+      </div>
+      <div class="post-actions">
+        <a href="#">Curtir</a>
+        <a href="#">Comentar</a>
+        <a href="#">Compartilhar</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

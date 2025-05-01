@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/qcal.css"/>
+    <title>Calorias Queimadas</title>
+    <link rel="icon" href="logos/2.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">
+            <a href="inicio.html"><img src="logos/1.png" alt="logo"></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="inicio.html">Início</a></li>
+            <li class="link"><a href="sobre.html">Sobre</a></li>
+            <li class="link"><a href="calculadoras.html">Calculadoras</a></li>
+            <li class="link"><a href="valornutri.html">Valor Nutricional</a></li>
+        </ul>
+        <div class="nav__buttons">
+            <button class="nav__btn" onclick="location.href='register.html'">
+                <span class="text">Cadastrar-se</span>
+            </button>
+            <button class="nav__btn" onclick="location.href='login.html'">
+                <span class="text">Entrar</span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="container">
+        <section class="section__container price__container">
+            <div class="price__grid">
+                <div id="img">
+                    <img src="fotos/16.png" alt="foto09">
+                </div>
+                <div class="price__card">
+                    <div class="price__card__content">
+                        <form id="calorias-form">
+                            <h4>Calculadora</h4>
+                            <h3>Calorias Queimadas</h3>
+                            <div class="input-box">
+                                <label for="atividade">Atividade:</label>
+                                <div class="input-field">
+                                    <i class="ri-run-fill"></i>
+                                    <select id="atividade" name="atividade">
+                                        <option value="selecione">Selecione...</option>
+                                        <option value="caminhada">Caminhada</option>
+                                        <option value="corrida">Corrida</option>
+                                        <option value="natação">Natação</option>
+                                        <option value="ciclismo">Ciclismo</option>
+                                        <option value="treino-de-força">Treino de Força</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="intensidade">Intensidade:</label>
+                                <div class="input-field">
+                                    <i class="ri-numbers-fill"></i>
+                                    <select id="intensidade" name="intensidade">
+                                        <option value="selecione">Selecione...</option>
+                                        <option value="baixa">Baixa</option>
+                                        <option value="média">Média</option>
+                                        <option value="alta">Alta</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="duracao">Duração (em minutos):</label>
+                                <div class="input-field">
+                                    <i class="ri-time-fill"></i>
+                                    <input type="number" id="duracao" name="duracao" step="any">
+                                    <span>min</span>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="peso">Peso (em kg):</label>
+                                <div class="input-field">
+                                    <i class="ri-weight-fill"></i>
+                                    <input type="number" id="peso" name="peso" step="any">
+                                    <span>kg</span>
+                                </div>
+                            </div>
+                            <button>
+                                <span class="text" type="submit" id="calcular">Calcular</button>
+                        </form>
+                        <br>
+                        <div id="infos" class="hidden">
+                            <div id="result">
+                                <div id="bmi">
+                                    <span id="value"></span>
+                                    <span>Calorias queimadas</span>
+                                </div>
+                                <div id="description">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div id="more_info">
+                                <a href="https://www.tuasaude.com/gasto-calorico-dos-exercicios/" target="_blank">
+                                    Mais informações sobre a queima de calorias
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>    
+
+    <footer class="section__container footer__container">
+        <span class="bg__blur"></span>
+        <span class="bg__blur footer__blur"></span>
+        <div class="footer__col">
+            <div class="footer__logo"><img src="logos/1.png" alt="logo"></div>
+            <p>Junte-se ao ActiveFusion e transforme sua rotina. Crie sua conta gratuita e explore a plataforma agora!</p>
+        </div>
+        <div class="footer__col">
+            <h4>Conheça-nos</h4>
+            <a href="sobre.html">Quem somos?</a>
+            <a href="contact.html">Fale conosco</a>
+        </div>
+        <div class="footer__col">
+            <h4>Recursos</h4>
+            <a href="calculadoras.html">Calculadoras</a>
+            <a href="register.html">Criar Conta</a>
+        </div>
+        <div class="footer__col">
+            <h4>Legal</h4>
+            <a href="terms.html">Termos de Uso</a>
+            <a href="privacy.html">Política de Privacidade</a>
+        </div>
+    </footer>
+    <div class="footer__bar">
+        Todos os direitos reservados ao ActiveFusion © 2024.
+    </div>
+
+    <script src="scripts/qcal.js"></script>
+</body>
+</html>    

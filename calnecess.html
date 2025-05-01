@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/calnecess.css"/>
+    <title>Calorias Diárias Necessarias</title>
+    <link rel="icon" href="logos/2.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">
+            <a href="inicio.html"><img src="logos/1.png" alt="logo"></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="inicio.html">Início</a></li>
+            <li class="link"><a href="sobre.html">Sobre</a></li>
+            <li class="link"><a href="calculadoras.html">Calculadoras</a></li>
+            <li class="link"><a href="valornutri.html">Valor Nutricional</a></li>
+        </ul>
+        <div class="nav__buttons">
+            <button class="nav__btn" onclick="location.href='register.html'">
+                <span class="text">Cadastrar-se</span>
+            </button>
+            <button class="nav__btn" onclick="location.href='login.html'">
+                <span class="text">Entrar</span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="container">
+        <section class="section__container calculator__container">
+            <div class="calculator__grid">
+                <div id="calculator-img">
+                    <img src="fotos/21.png" alt="foto21">
+                </div>
+                <div class="calculator__card">
+                    <div class="calculator__card__content">
+                        <h4>Calculadora</h4>
+                        <h3>Calorias Diárias Necessarias</h3>
+                        <form id="calculator-form">
+                            <div class="input-box">
+                                <label for="age">Idade:</label>
+                                <div class="input-field">
+                                    <i class="ri-calendar-fill"></i>
+                                    <input type="number" id="age" min="18" max="120">
+                                    <span>Anos</span>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="gender">Gênero:</label>
+                                <div class="input-field">
+                                    <i class="ri-user-fill"></i>
+                                    <select id="gender">
+                                        <option value="selecione">Selecione...</option>
+                                        <option value="male">Masculino</option>
+                                        <option value="female">Feminino</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="weight">Peso (kg):</label>
+                                <div class="input-field">
+                                    <i class="ri-weight-fill"></i>
+                                    <input type="number" id="weight" min="40" max="200">
+                                    <span>kg</span>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="height">Altura (cm):</label>
+                                <div class="input-field">
+                                    <i class="ri-ruler-fill"></i>
+                                    <input type="number" id="height" min="140" max="220">
+                                    <span>cm</span>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="activity-level">Nível de Atividade:</label>
+                                <div class="input-field">
+                                    <i class="ri-run-fill"></i>
+                                    <select id="activity-level">
+                                        <option value="selecione">Selecione...</option>
+                                        <option value="sedentary">Sedentário</option>
+                                        <option value="lightly-active">Ligeiramente Ativo</option>
+                                        <option value="moderately-active">Moderadamente Ativo</option>
+                                        <option value="very-active">Muito Ativo</option>
+                                        <option value="extremely-active">Extremamente Ativo</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="goal">Objetivo:</label>
+                                <div class="input-field">
+                                    <i class="ri-medal-fill"></i>
+                                    <select id="goal">
+                                        <option value="selecione">Selecione...</option>
+                                        <option value="weight-loss">Perda de Peso</option>
+                                        <option value="maintenance">Manutenção</option>
+                                        <option value="muscle-gain">Ganho de Massa</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit">
+                                <span class="text">Calcular</span>
+                            </button>
+                        </form>
+                        <br>
+                        <div id="infos" class="hidden">
+                            <div id="result">
+                                <div id="description">
+                                </div>
+                                <div id="bmi">
+                                </div>  
+                            </div>
+                            <div id="more_info">
+                              <a href="https://oglobo.globo.com/saude/noticia/2023/01/quantas-calorias-devo-consumir-por-dia.ghtml" target="_blank">
+                                Mais informações sobre Calorias Diárias
+                                <i class="ri-external-link-line"></i>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section__container footer__container">
+        <span class="bg__blur"></span>
+        <span class="bg__blur footer__blur"></span>
+        <div class="footer__col">
+            <div class="footer__logo"><img src="logos/1.png" alt="logo"></div>
+            <p>Junte-se ao ActiveFusion e transforme sua rotina. Crie sua conta gratuita e explore a plataforma agora!</p>
+        </div>
+        <div class="footer__col">
+            <h4>Conheça-nos</h4>
+            <a href="sobre.html">Quem somos?</a>
+            <a href="contact.html">Fale conosco</a>
+        </div>
+        <div class="footer__col">
+            <h4>Recursos</h4>
+            <a href="calculadoras.html">Calculadoras</a>
+            <a href="register.html">Criar Conta</a>
+        </div>
+        <div class="footer__col">
+            <h4>Legal</h4>
+            <a href="terms.html">Termos de Uso</a>
+            <a href="privacy.html">Política de Privacidade</a>
+        </div>
+    </footer>
+    <div class="footer__bar">
+        Todos os direitos reservados ao ActiveFusion © 2024.
+    </div>
+
+    <script src="scripts/calnecess.js"></script>
+
+</body>
+</html>
