@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --background-color: #f3f8fb;
+    --form-background: #ffffff;
+    --primary-color: #5a55ae;
+    --primary-light: #817dd9;
+    --secondary-color: #ff8585;
+    --secondary-light: #ffc1c1;
+    --text-color: #2d2d2d;
+    --text-muted: #8a8a8a;
+    --border-color: #e6e9f0;
+    --gradient: linear-gradient(144deg, #817dd9, #ff8585);
+    --box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.form-container {
+    background: var(--form-background);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: #f9fbfd;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: var(--primary-light);
+    outline: none;
+    box-shadow: 0 0 8px rgba(129, 125, 217, 0.3);
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #330099;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 45px; 
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.password-container input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem; 
+    color: #6c757d; 
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.password-container .toggle-password:hover {
+    color: var(--primary-color); 
+}
+
+button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #ff9999, #330099 50%);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+  
+button:active, button:hover {
+    outline: 0;
+}
+  
+button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+  
+button:hover span {
+    background: none;
+}
+  
+button:active {
+    transform: scale(0.9);
+}
+
+p {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Estilos do botão de configurações */
+.settings-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos do botão Feed */
+.feed-btn-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feed-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.feed-btn:hover {
+    background-color: #218838;
+}
+
+/* Estilos do modal de configurações */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.modal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modal ul li {
+    margin: 10px 0;
+}
+
+.close-modal-button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-modal-button:hover {
+    background-color: #c82333;
+}

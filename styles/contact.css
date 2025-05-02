@@ -1,0 +1,109 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f8fb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #2d2d2d;
+}
+
+.contact-container {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #5a55ae;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #8a8a8a;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e6e9f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f9fbfd;
+    color: #2d2d2d;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #817dd9;
+}
+
+button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #ff9999, #330099 50%);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+  
+button:active, button:hover {
+    outline: 0;
+}
+  
+button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+  
+button:hover span {
+    background: none;
+}
+  
+button:active {
+    transform: scale(0.9);
+}
