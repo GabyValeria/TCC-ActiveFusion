@@ -84,6 +84,6 @@ Este projeto foi desenvolvido com dedicação por:
 
 * **Ana Carvalho** - [LinkedIn]()
 * **Barbara Paiva** - [LinkedIn](https://www.linkedin.com/in/barbara-paiva-579030317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-* **Gabriela Valeria** - [GitHub](https://github.com/GabyValeria)
+* **Gabrielle Valeria** - [GitHub](https://github.com/GabyValeria)
 
 ---
